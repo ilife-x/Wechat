@@ -31,6 +31,15 @@
 		11DEEB2C25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1E25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m */; };
 		11DEEB2D25ECBEA30056A0C6 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1F25ECBEA30056A0C6 /* DDFileLogger.m */; };
 		11DEEB2E25ECBEA30056A0C6 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB2025ECBEA30056A0C6 /* DDASLLogCapture.m */; };
+		11DEEB6125ECC47C0056A0C6 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB5125ECC47C0056A0C6 /* DDXMLElement.m */; };
+		11DEEB6225ECC47C0056A0C6 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB5525ECC47C0056A0C6 /* DDXMLElementAdditions.m */; };
+		11DEEB6325ECC47C0056A0C6 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB5625ECC47C0056A0C6 /* DDXMLNode.m */; };
+		11DEEB6425ECC47C0056A0C6 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB5725ECC47C0056A0C6 /* DDXMLDocument.m */; };
+		11DEEB6525ECC47C0056A0C6 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB5E25ECC47C0056A0C6 /* NSString+DDXML.m */; };
+		11DEEB6E25ECC4A30056A0C6 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DEEB6D25ECC4A30056A0C6 /* libxml2.tbd */; };
+		11DEEB9025ECC6CA0056A0C6 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 11DEEB8B25ECC6CA0056A0C6 /* Documentation.html */; };
+		11DEEB9125ECC6CA0056A0C6 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB8C25ECC6CA0056A0C6 /* GCDAsyncUdpSocket.m */; };
+		11DEEB9225ECC6CA0056A0C6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB8D25ECC6CA0056A0C6 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +115,27 @@
 		11DEEB1E25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		11DEEB1F25ECBEA30056A0C6 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
 		11DEEB2025ECBEA30056A0C6 /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		11DEEB4F25ECC47C0056A0C6 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		11DEEB5025ECC47C0056A0C6 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		11DEEB5125ECC47C0056A0C6 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		11DEEB5225ECC47C0056A0C6 /* KissXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML.h; sourceTree = "<group>"; };
+		11DEEB5425ECC47C0056A0C6 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		11DEEB5525ECC47C0056A0C6 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		11DEEB5625ECC47C0056A0C6 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		11DEEB5725ECC47C0056A0C6 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		11DEEB5925ECC47C0056A0C6 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		11DEEB5A25ECC47C0056A0C6 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		11DEEB5B25ECC47C0056A0C6 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		11DEEB5D25ECC47C0056A0C6 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		11DEEB5E25ECC47C0056A0C6 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		11DEEB6025ECC47C0056A0C6 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		11DEEB6D25ECC4A30056A0C6 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		11DEEB8925ECC6CA0056A0C6 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		11DEEB8B25ECC6CA0056A0C6 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		11DEEB8C25ECC6CA0056A0C6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		11DEEB8D25ECC6CA0056A0C6 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		11DEEB8E25ECC6CA0056A0C6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		11DEEB8F25ECC6CA0056A0C6 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DEEB6E25ECC4A30056A0C6 /* libxml2.tbd in Frameworks */,
 				114AA48D25EC915C000001E3 /* libresolv.tbd in Frameworks */,
 				11762A0325E7ADD0000A6E4C /* libidn.a in Frameworks */,
 			);
@@ -218,6 +249,8 @@
 		1176296425E79E68000A6E4C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				11DEEB7F25ECC6A60056A0C6 /* CocoaAsyncSocket */,
+				11DEEB4E25ECC47C0056A0C6 /* KissXML */,
 				11DEEAFA25ECBEA30056A0C6 /* CocoaLumberjack */,
 				117629FD25E7ADD0000A6E4C /* libidn */,
 			);
@@ -238,6 +271,7 @@
 		11762C5125E7B752000A6E4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11DEEB6D25ECC4A30056A0C6 /* libxml2.tbd */,
 				114AA48925EC9145000001E3 /* libresolv.tbd */,
 				11762C5425E7B779000A6E4C /* Security.framework */,
 				11762C5225E7B752000A6E4C /* CFNetwork.framework */,
@@ -282,6 +316,72 @@
 				11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */,
 			);
 			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		11DEEB4E25ECC47C0056A0C6 /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				11DEEB4F25ECC47C0056A0C6 /* DDXMLDocument.h */,
+				11DEEB5025ECC47C0056A0C6 /* DDXML.h */,
+				11DEEB5125ECC47C0056A0C6 /* DDXMLElement.m */,
+				11DEEB5225ECC47C0056A0C6 /* KissXML.h */,
+				11DEEB5325ECC47C0056A0C6 /* Additions */,
+				11DEEB5625ECC47C0056A0C6 /* DDXMLNode.m */,
+				11DEEB5725ECC47C0056A0C6 /* DDXMLDocument.m */,
+				11DEEB5825ECC47C0056A0C6 /* Private */,
+				11DEEB5A25ECC47C0056A0C6 /* DDXMLElement.h */,
+				11DEEB5B25ECC47C0056A0C6 /* module.modulemap */,
+				11DEEB5C25ECC47C0056A0C6 /* Categories */,
+				11DEEB6025ECC47C0056A0C6 /* DDXMLNode.h */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		11DEEB5325ECC47C0056A0C6 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				11DEEB5425ECC47C0056A0C6 /* DDXMLElementAdditions.h */,
+				11DEEB5525ECC47C0056A0C6 /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		11DEEB5825ECC47C0056A0C6 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				11DEEB5925ECC47C0056A0C6 /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		11DEEB5C25ECC47C0056A0C6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				11DEEB5D25ECC47C0056A0C6 /* NSString+DDXML.h */,
+				11DEEB5E25ECC47C0056A0C6 /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		11DEEB7F25ECC6A60056A0C6 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				11DEEB8925ECC6CA0056A0C6 /* CocoaAsyncSocket.h */,
+				11DEEB8A25ECC6CA0056A0C6 /* GCD */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		11DEEB8A25ECC6CA0056A0C6 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				11DEEB8B25ECC6CA0056A0C6 /* Documentation.html */,
+				11DEEB8C25ECC6CA0056A0C6 /* GCDAsyncUdpSocket.m */,
+				11DEEB8D25ECC6CA0056A0C6 /* GCDAsyncSocket.m */,
+				11DEEB8E25ECC6CA0056A0C6 /* GCDAsyncUdpSocket.h */,
+				11DEEB8F25ECC6CA0056A0C6 /* GCDAsyncSocket.h */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +489,7 @@
 				111081F825E79A3500B105D3 /* LaunchScreen.storyboard in Resources */,
 				111081F525E79A3500B105D3 /* Assets.xcassets in Resources */,
 				111081F325E79A3400B105D3 /* Main.storyboard in Resources */,
+				11DEEB9025ECC6CA0056A0C6 /* Documentation.html in Resources */,
 				11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,8 +520,15 @@
 				11DEEB2B25ECBEA30056A0C6 /* DDLoggerNames.m in Sources */,
 				11DEEB2525ECBEA30056A0C6 /* DDContextFilterLogFormatter.m in Sources */,
 				11DEEB2D25ECBEA30056A0C6 /* DDFileLogger.m in Sources */,
+				11DEEB6125ECC47C0056A0C6 /* DDXMLElement.m in Sources */,
+				11DEEB6525ECC47C0056A0C6 /* NSString+DDXML.m in Sources */,
+				11DEEB6425ECC47C0056A0C6 /* DDXMLDocument.m in Sources */,
+				11DEEB6325ECC47C0056A0C6 /* DDXMLNode.m in Sources */,
 				11DEEB2C25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m in Sources */,
 				11DEEB2625ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m in Sources */,
+				11DEEB6225ECC47C0056A0C6 /* DDXMLElementAdditions.m in Sources */,
+				11DEEB9125ECC6CA0056A0C6 /* GCDAsyncUdpSocket.m in Sources */,
+				11DEEB9225ECC6CA0056A0C6 /* GCDAsyncSocket.m in Sources */,
 				11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */,
 				11DEEB2325ECBEA30056A0C6 /* DDASLLogger.m in Sources */,
 				11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */,
