@@ -6,6 +6,7 @@
 //
 
 #import "HomeViewController.h"
+#import "AppDelegate.h"
 
 @interface HomeViewController ()
 
@@ -18,14 +19,15 @@
     self.view.backgroundColor = UIColor.whiteColor;
     self.title = @"home";
     
-//    [DDLog addLogger:[DDOSLogger sharedInstance]]; // Uses os_log
-//
-//    DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
-//    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
-//    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
-//    [DDLog addLogger:fileLogger];
+
 }
 
+
+#pragma 退出流程
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    AppDelegate *app =  [[UIApplication sharedApplication]delegate];
+    [app logout];
+}
 
 
 @end

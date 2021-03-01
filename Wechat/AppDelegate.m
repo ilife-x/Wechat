@@ -40,6 +40,8 @@
     return YES;
 }
 
+#pragma mark - 登录流程
+
 //1.
 - (void)setupXMPPStream{
     //初始化
@@ -49,33 +51,76 @@
     [_xmppStream addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
 }
 
+
+
 //2.
 - (void)connectToHost{
     if (!_xmppStream) {
         [self setupXMPPStream];
     }
-    
     //设置用户JID
     XMPPJID *myJID = [XMPPJID jidWithUser:@"wangwu" domain:@"bogon" resource:@"iphone"];
     _xmppStream.myJID = myJID;
-    _xmppStream.hostName = @"bogon";//域名,也可以是ip地址
-    _xmppStream.hostPort = 5222;//默认端口就是5222,可以省略
+    
+    //域名,也可以是ip地址
+    _xmppStream.hostName = @"bogon";
+    
+    //默认端口就是5222,可以省略
+    _xmppStream.hostPort = 5222;
     NSError *error = nil;;
     if(![_xmppStream connectWithTimeout:XMPPStreamTimeoutNone error:&error]){
         NSLog(@"%@",error);
     };
 }
 
-#pragma mark - xmppStream delegate
+//3.
+- (void)sendPwdToHost{
+    NSError *error = nil;
+    [_xmppStream authenticateWithPassword:@"123456" error:&error];
+}
+
+//4.
+- (void)sendOnlineToHost{
+    //将在线的消息包裹成xml标签发送到服务器
+    XMPPPresence *presence = [XMPPPresence presence];
+    [_xmppStream sendElement:presence];
+    NSLog(@"%@",presence);
+}
+
+
+#pragma mark - 链接到服务器
 // 与主机链接成功
 - (void)xmppStreamDidConnect:(XMPPStream *)sender{
     NSLog(@"与主机链接成功");
+    //主机链接成功后发送密码授权
+    [self sendPwdToHost];
 }
 
 - (void)xmppStreamDidDisconnect:(XMPPStream *)sender withError:(NSError *)error{
     //如果有错误,就代表链接失败
     NSLog(@"与主机断开链接 %@",error);
 
+}
+
+#pragma mark - 授权成功
+- (void)xmppStreamDidAuthenticate:(XMPPStream *)sender{
+    NSLog(@"授权成功");
+    [self sendOnlineToHost];
+}
+
+- (void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(DDXMLElement *)error{
+    NSLog(@"授权失败 :%@",error);
+}
+
+
+#pragma 退出,注销
+- (void)logout{
+    //1.发送离线消息,unavailable 代表离线
+    XMPPPresence *offline = [XMPPPresence presenceWithType:@"unavailable"];
+    [_xmppStream sendElement:offline];
+    
+    //2.断开链接
+    [_xmppStream disconnect];
 }
 
 @end
