@@ -15,22 +15,22 @@
 		1110820525E79A3500B105D3 /* WechatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110820425E79A3500B105D3 /* WechatTests.m */; };
 		1110821025E79A3500B105D3 /* WechatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110820F25E79A3500B105D3 /* WechatUITests.m */; };
 		1110822825E79B3C00B105D3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110822725E79B3C00B105D3 /* HomeViewController.m */; };
+		114AA48D25EC915C000001E3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 114AA48925EC9145000001E3 /* libresolv.tbd */; };
 		11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 117629FF25E7ADD0000A6E4C /* build-libidn.sh */; };
 		11762A0325E7ADD0000A6E4C /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11762A0025E7ADD0000A6E4C /* libidn.a */; };
-		11762C0925E7AEAE000A6E4C /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762BF925E7AEAE000A6E4C /* DDXMLElement.m */; };
-		11762C0A25E7AEAE000A6E4C /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762BFD25E7AEAE000A6E4C /* DDXMLElementAdditions.m */; };
-		11762C0B25E7AEAE000A6E4C /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762BFE25E7AEAE000A6E4C /* DDXMLNode.m */; };
-		11762C0C25E7AEAE000A6E4C /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762BFF25E7AEAE000A6E4C /* DDXMLDocument.m */; };
-		11762C0D25E7AEAE000A6E4C /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762C0625E7AEAE000A6E4C /* NSString+DDXML.m */; };
-		11762C4125E7B4B7000A6E4C /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762C3F25E7B4B7000A6E4C /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11762CBA25E7BD9D000A6E4C /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CAA25E7BD9D000A6E4C /* DDTTYLogger.m */; };
-		11762CBB25E7BD9D000A6E4C /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CAD25E7BD9D000A6E4C /* DDASLLogger.m */; };
-		11762CBC25E7BD9D000A6E4C /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CB225E7BD9D000A6E4C /* ContextFilterLogFormatter.m */; };
-		11762CBD25E7BD9D000A6E4C /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CB325E7BD9D000A6E4C /* DispatchQueueLogFormatter.m */; };
-		11762CBE25E7BD9D000A6E4C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11762CB425E7BD9D000A6E4C /* README.txt */; };
-		11762CBF25E7BD9D000A6E4C /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CB525E7BD9D000A6E4C /* DDLog.m */; };
-		11762CC025E7BD9D000A6E4C /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CB725E7BD9D000A6E4C /* DDAbstractDatabaseLogger.m */; };
-		11762CC125E7BD9D000A6E4C /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11762CB825E7BD9D000A6E4C /* DDFileLogger.m */; };
+		11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */; };
+		11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */; };
+		11DEEB2325ECBEA30056A0C6 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1025ECBEA30056A0C6 /* DDASLLogger.m */; };
+		11DEEB2425ECBEA30056A0C6 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1225ECBEA30056A0C6 /* CLIColor.m */; };
+		11DEEB2525ECBEA30056A0C6 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1425ECBEA30056A0C6 /* DDContextFilterLogFormatter.m */; };
+		11DEEB2625ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1525ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m */; };
+		11DEEB2725ECBEA30056A0C6 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1625ECBEA30056A0C6 /* DDFileLogger+Buffering.m */; };
+		11DEEB2825ECBEA30056A0C6 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1725ECBEA30056A0C6 /* DDMultiFormatter.m */; };
+		11DEEB2925ECBEA30056A0C6 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1825ECBEA30056A0C6 /* DDLog.m */; };
+		11DEEB2B25ECBEA30056A0C6 /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1D25ECBEA30056A0C6 /* DDLoggerNames.m */; };
+		11DEEB2C25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1E25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m */; };
+		11DEEB2D25ECBEA30056A0C6 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1F25ECBEA30056A0C6 /* DDFileLogger.m */; };
+		11DEEB2E25ECBEA30056A0C6 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB2025ECBEA30056A0C6 /* DDASLLogCapture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,43 +67,45 @@
 		1110821125E79A3500B105D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1110822625E79B3C00B105D3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1110822725E79B3C00B105D3 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		114AA48925EC9145000001E3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		117629FE25E7ADD0000A6E4C /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		117629FF25E7ADD0000A6E4C /* build-libidn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-libidn.sh"; sourceTree = "<group>"; };
 		11762A0025E7ADD0000A6E4C /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		11762A0125E7ADD0000A6E4C /* idn-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idn-int.h"; sourceTree = "<group>"; };
-		11762BF725E7AEAE000A6E4C /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
-		11762BF825E7AEAE000A6E4C /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
-		11762BF925E7AEAE000A6E4C /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
-		11762BFA25E7AEAE000A6E4C /* KissXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML.h; sourceTree = "<group>"; };
-		11762BFC25E7AEAE000A6E4C /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
-		11762BFD25E7AEAE000A6E4C /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
-		11762BFE25E7AEAE000A6E4C /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
-		11762BFF25E7AEAE000A6E4C /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
-		11762C0125E7AEAE000A6E4C /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
-		11762C0225E7AEAE000A6E4C /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
-		11762C0325E7AEAE000A6E4C /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		11762C0525E7AEAE000A6E4C /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
-		11762C0625E7AEAE000A6E4C /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
-		11762C0825E7AEAE000A6E4C /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
-		11762C3F25E7B4B7000A6E4C /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		11762C4025E7B4B7000A6E4C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		11762C5225E7B752000A6E4C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		11762C5425E7B779000A6E4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		11762CAA25E7BD9D000A6E4C /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
-		11762CAB25E7BD9D000A6E4C /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		11762CAC25E7BD9D000A6E4C /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		11762CAD25E7BD9D000A6E4C /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		11762CAE25E7BD9D000A6E4C /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		11762CB025E7BD9D000A6E4C /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		11762CB125E7BD9D000A6E4C /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		11762CB225E7BD9D000A6E4C /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		11762CB325E7BD9D000A6E4C /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		11762CB425E7BD9D000A6E4C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		11762CB525E7BD9D000A6E4C /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		11762CB625E7BD9D000A6E4C /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		11762CB725E7BD9D000A6E4C /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		11762CB825E7BD9D000A6E4C /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		11762CB925E7BD9D000A6E4C /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		11DEEAFB25ECBEA30056A0C6 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Internal.h"; sourceTree = "<group>"; };
+		11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOSLogger.m; sourceTree = "<group>"; };
+		11DEEB0025ECBEA30056A0C6 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		11DEEB0125ECBEA30056A0C6 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		11DEEB0225ECBEA30056A0C6 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		11DEEB0325ECBEA30056A0C6 /* DDLoggerNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLoggerNames.h; sourceTree = "<group>"; };
+		11DEEB0425ECBEA30056A0C6 /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		11DEEB0525ECBEA30056A0C6 /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		11DEEB0625ECBEA30056A0C6 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		11DEEB0725ECBEA30056A0C6 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		11DEEB0825ECBEA30056A0C6 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		11DEEB0925ECBEA30056A0C6 /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		11DEEB0A25ECBEA30056A0C6 /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
+		11DEEB0B25ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		11DEEB0C25ECBEA30056A0C6 /* DDOSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDOSLogger.h; sourceTree = "<group>"; };
+		11DEEB0D25ECBEA30056A0C6 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		11DEEB0E25ECBEA30056A0C6 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		11DEEB0F25ECBEA30056A0C6 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		11DEEB1025ECBEA30056A0C6 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		11DEEB1225ECBEA30056A0C6 /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		11DEEB1425ECBEA30056A0C6 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		11DEEB1525ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		11DEEB1625ECBEA30056A0C6 /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
+		11DEEB1725ECBEA30056A0C6 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		11DEEB1825ECBEA30056A0C6 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		11DEEB1A25ECBEA30056A0C6 /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		11DEEB1C25ECBEA30056A0C6 /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		11DEEB1D25ECBEA30056A0C6 /* DDLoggerNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLoggerNames.m; sourceTree = "<group>"; };
+		11DEEB1E25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		11DEEB1F25ECBEA30056A0C6 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		11DEEB2025ECBEA30056A0C6 /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114AA48D25EC915C000001E3 /* libresolv.tbd in Frameworks */,
 				11762A0325E7ADD0000A6E4C /* libidn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +218,7 @@
 		1176296425E79E68000A6E4C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				11762CA925E7BD9D000A6E4C /* CocoaLumberjack */,
-				11762C3E25E7B4B7000A6E4C /* CocoaAsyncSocket */,
-				11762BF625E7AEAE000A6E4C /* KissXML */,
+				11DEEAFA25ECBEA30056A0C6 /* CocoaLumberjack */,
 				117629FD25E7ADD0000A6E4C /* libidn */,
 			);
 			path = Vendor;
@@ -234,97 +235,53 @@
 			path = libidn;
 			sourceTree = "<group>";
 		};
-		11762BF625E7AEAE000A6E4C /* KissXML */ = {
-			isa = PBXGroup;
-			children = (
-				11762BF725E7AEAE000A6E4C /* DDXMLDocument.h */,
-				11762BF825E7AEAE000A6E4C /* DDXML.h */,
-				11762BF925E7AEAE000A6E4C /* DDXMLElement.m */,
-				11762BFA25E7AEAE000A6E4C /* KissXML.h */,
-				11762BFB25E7AEAE000A6E4C /* Additions */,
-				11762BFE25E7AEAE000A6E4C /* DDXMLNode.m */,
-				11762BFF25E7AEAE000A6E4C /* DDXMLDocument.m */,
-				11762C0025E7AEAE000A6E4C /* Private */,
-				11762C0225E7AEAE000A6E4C /* DDXMLElement.h */,
-				11762C0325E7AEAE000A6E4C /* module.modulemap */,
-				11762C0425E7AEAE000A6E4C /* Categories */,
-				11762C0825E7AEAE000A6E4C /* DDXMLNode.h */,
-			);
-			path = KissXML;
-			sourceTree = "<group>";
-		};
-		11762BFB25E7AEAE000A6E4C /* Additions */ = {
-			isa = PBXGroup;
-			children = (
-				11762BFC25E7AEAE000A6E4C /* DDXMLElementAdditions.h */,
-				11762BFD25E7AEAE000A6E4C /* DDXMLElementAdditions.m */,
-			);
-			path = Additions;
-			sourceTree = "<group>";
-		};
-		11762C0025E7AEAE000A6E4C /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				11762C0125E7AEAE000A6E4C /* DDXMLPrivate.h */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		11762C0425E7AEAE000A6E4C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				11762C0525E7AEAE000A6E4C /* NSString+DDXML.h */,
-				11762C0625E7AEAE000A6E4C /* NSString+DDXML.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		11762C3E25E7B4B7000A6E4C /* CocoaAsyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				11762C3F25E7B4B7000A6E4C /* GCDAsyncSocket.m */,
-				11762C4025E7B4B7000A6E4C /* GCDAsyncSocket.h */,
-			);
-			path = CocoaAsyncSocket;
-			sourceTree = "<group>";
-		};
 		11762C5125E7B752000A6E4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				114AA48925EC9145000001E3 /* libresolv.tbd */,
 				11762C5425E7B779000A6E4C /* Security.framework */,
 				11762C5225E7B752000A6E4C /* CFNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11762CA925E7BD9D000A6E4C /* CocoaLumberjack */ = {
+		11DEEAFA25ECBEA30056A0C6 /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
-				11762CAA25E7BD9D000A6E4C /* DDTTYLogger.m */,
-				11762CAB25E7BD9D000A6E4C /* DDLog.h */,
-				11762CAC25E7BD9D000A6E4C /* DDAbstractDatabaseLogger.h */,
-				11762CAD25E7BD9D000A6E4C /* DDASLLogger.m */,
-				11762CAE25E7BD9D000A6E4C /* DDFileLogger.h */,
-				11762CAF25E7BD9D000A6E4C /* Extensions */,
-				11762CB525E7BD9D000A6E4C /* DDLog.m */,
-				11762CB625E7BD9D000A6E4C /* DDTTYLogger.h */,
-				11762CB725E7BD9D000A6E4C /* DDAbstractDatabaseLogger.m */,
-				11762CB825E7BD9D000A6E4C /* DDFileLogger.m */,
-				11762CB925E7BD9D000A6E4C /* DDASLLogger.h */,
+				11DEEB0E25ECBEA30056A0C6 /* CLIColor.h */,
+				11DEEB1225ECBEA30056A0C6 /* CLIColor.m */,
+				11DEEB1C25ECBEA30056A0C6 /* CocoaLumberjack.h */,
+				11DEEB0225ECBEA30056A0C6 /* DDAbstractDatabaseLogger.h */,
+				11DEEB1E25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m */,
+				11DEEB0525ECBEA30056A0C6 /* DDASLLogCapture.h */,
+				11DEEB2025ECBEA30056A0C6 /* DDASLLogCapture.m */,
+				11DEEB0F25ECBEA30056A0C6 /* DDASLLogger.h */,
+				11DEEB1025ECBEA30056A0C6 /* DDASLLogger.m */,
+				11DEEB0925ECBEA30056A0C6 /* DDAssertMacros.h */,
+				11DEEB0725ECBEA30056A0C6 /* DDContextFilterLogFormatter.h */,
+				11DEEB1425ECBEA30056A0C6 /* DDContextFilterLogFormatter.m */,
+				11DEEB0B25ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.h */,
+				11DEEB1525ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m */,
+				11DEEB0625ECBEA30056A0C6 /* DDFileLogger.h */,
+				11DEEB1F25ECBEA30056A0C6 /* DDFileLogger.m */,
+				11DEEB0A25ECBEA30056A0C6 /* DDFileLogger+Buffering.h */,
+				11DEEB1625ECBEA30056A0C6 /* DDFileLogger+Buffering.m */,
+				11DEEAFB25ECBEA30056A0C6 /* DDFileLogger+Internal.h */,
+				11DEEB1A25ECBEA30056A0C6 /* DDLegacyMacros.h */,
+				11DEEB0025ECBEA30056A0C6 /* DDLog.h */,
+				11DEEB1825ECBEA30056A0C6 /* DDLog.m */,
+				11DEEB0D25ECBEA30056A0C6 /* DDLog+LOGV.h */,
+				11DEEB0325ECBEA30056A0C6 /* DDLoggerNames.h */,
+				11DEEB1D25ECBEA30056A0C6 /* DDLoggerNames.m */,
+				11DEEB0425ECBEA30056A0C6 /* DDLogMacros.h */,
+				11DEEB0125ECBEA30056A0C6 /* DDMultiFormatter.h */,
+				11DEEB1725ECBEA30056A0C6 /* DDMultiFormatter.m */,
+				11DEEB0C25ECBEA30056A0C6 /* DDOSLogger.h */,
+				11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */,
+				11DEEB0825ECBEA30056A0C6 /* DDTTYLogger.h */,
+				11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */,
 			);
 			path = CocoaLumberjack;
-			sourceTree = "<group>";
-		};
-		11762CAF25E7BD9D000A6E4C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				11762CB025E7BD9D000A6E4C /* ContextFilterLogFormatter.h */,
-				11762CB125E7BD9D000A6E4C /* DispatchQueueLogFormatter.h */,
-				11762CB225E7BD9D000A6E4C /* ContextFilterLogFormatter.m */,
-				11762CB325E7BD9D000A6E4C /* DispatchQueueLogFormatter.m */,
-				11762CB425E7BD9D000A6E4C /* README.txt */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +390,6 @@
 				111081F525E79A3500B105D3 /* Assets.xcassets in Resources */,
 				111081F325E79A3400B105D3 /* Main.storyboard in Resources */,
 				11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */,
-				11762CBE25E7BD9D000A6E4C /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,22 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11762CBF25E7BD9D000A6E4C /* DDLog.m in Sources */,
-				11762CC125E7BD9D000A6E4C /* DDFileLogger.m in Sources */,
-				11762C0C25E7AEAE000A6E4C /* DDXMLDocument.m in Sources */,
-				11762CBA25E7BD9D000A6E4C /* DDTTYLogger.m in Sources */,
-				11762C0925E7AEAE000A6E4C /* DDXMLElement.m in Sources */,
-				11762CBB25E7BD9D000A6E4C /* DDASLLogger.m in Sources */,
-				11762CBD25E7BD9D000A6E4C /* DispatchQueueLogFormatter.m in Sources */,
-				11762C0B25E7AEAE000A6E4C /* DDXMLNode.m in Sources */,
-				11762C0D25E7AEAE000A6E4C /* NSString+DDXML.m in Sources */,
-				11762C0A25E7AEAE000A6E4C /* DDXMLElementAdditions.m in Sources */,
+				11DEEB2925ECBEA30056A0C6 /* DDLog.m in Sources */,
 				111081EA25E79A3400B105D3 /* AppDelegate.m in Sources */,
-				11762C4125E7B4B7000A6E4C /* GCDAsyncSocket.m in Sources */,
+				11DEEB2B25ECBEA30056A0C6 /* DDLoggerNames.m in Sources */,
+				11DEEB2525ECBEA30056A0C6 /* DDContextFilterLogFormatter.m in Sources */,
+				11DEEB2D25ECBEA30056A0C6 /* DDFileLogger.m in Sources */,
+				11DEEB2C25ECBEA30056A0C6 /* DDAbstractDatabaseLogger.m in Sources */,
+				11DEEB2625ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m in Sources */,
+				11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */,
+				11DEEB2325ECBEA30056A0C6 /* DDASLLogger.m in Sources */,
+				11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */,
+				11DEEB2E25ECBEA30056A0C6 /* DDASLLogCapture.m in Sources */,
+				11DEEB2725ECBEA30056A0C6 /* DDFileLogger+Buffering.m in Sources */,
+				11DEEB2825ECBEA30056A0C6 /* DDMultiFormatter.m in Sources */,
+				11DEEB2425ECBEA30056A0C6 /* CLIColor.m in Sources */,
 				111081FB25E79A3500B105D3 /* main.m in Sources */,
 				1110822825E79B3C00B105D3 /* HomeViewController.m in Sources */,
-				11762CBC25E7BD9D000A6E4C /* ContextFilterLogFormatter.m in Sources */,
-				11762CC025E7BD9D000A6E4C /* DDAbstractDatabaseLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -632,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -650,11 +606,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor",
+					"$(PROJECT_DIR)/Wechat",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor/KissXML",
 					/usr/include/libxml2,
+					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor/CocoaLumberjack",
 				);
 				INFOPLIST_FILE = Wechat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -682,11 +640,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor",
+					"$(PROJECT_DIR)/Wechat",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor/KissXML",
 					/usr/include/libxml2,
+					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor/CocoaLumberjack",
 				);
 				INFOPLIST_FILE = Wechat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
