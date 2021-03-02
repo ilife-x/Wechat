@@ -219,6 +219,7 @@
 		11762A0125E7ADD0000A6E4C /* idn-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idn-int.h"; sourceTree = "<group>"; };
 		11762C5225E7B752000A6E4C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		11762C5425E7B779000A6E4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1176996A25EDD231001EFD83 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		11DEEAFB25ECBEA30056A0C6 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOSLogger.m; sourceTree = "<group>"; };
@@ -616,6 +617,7 @@
 				111081F625E79A3500B105D3 /* LaunchScreen.storyboard */,
 				111081F925E79A3500B105D3 /* Info.plist */,
 				111081FA25E79A3500B105D3 /* main.m */,
+				1176996A25EDD231001EFD83 /* PrefixHeader.pch */,
 			);
 			path = Wechat;
 			sourceTree = "<group>";
@@ -2110,6 +2112,8 @@
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor",
 					"$(PROJECT_DIR)/Wechat",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Wechat/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor/KissXML",
@@ -2145,6 +2149,8 @@
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor",
 					"$(PROJECT_DIR)/Wechat",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Wechat/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wechat/Classes/Lib/XMPP/Vendor/KissXML",
