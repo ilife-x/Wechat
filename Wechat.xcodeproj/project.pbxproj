@@ -182,6 +182,13 @@
 		11EAED6925F0790A0071D3EC /* UIView+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED6325F0790A0071D3EC /* UIView+WF.m */; };
 		11EAED6A25F0790A0071D3EC /* UIScreen+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED6425F0790A0071D3EC /* UIScreen+WF.m */; };
 		11EAED6B25F0790A0071D3EC /* UIImage+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED6525F0790A0071D3EC /* UIImage+WF.m */; };
+		11EAED7925F07EE50071D3EC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED7825F07EE50071D3EC /* LoginViewController.m */; };
+		11EAED7E25F07EFC0071D3EC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EAED7D25F07EFC0071D3EC /* Login.storyboard */; };
+		11EAED8425F07F3B0071D3EC /* OtherLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED8325F07F3B0071D3EC /* OtherLoginViewController.m */; };
+		11EAED9025F085B70071D3EC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED8B25F085B70071D3EC /* MBProgressHUD.m */; };
+		11EAED9125F085B70071D3EC /* MBProgressHUD+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAED8E25F085B70071D3EC /* MBProgressHUD+HM.m */; };
+		11EAED9225F085B70071D3EC /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11EAED8F25F085B70071D3EC /* MBProgressHUD.bundle */; };
+		11EAEDA925F0E7070071D3EC /* WCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEDA825F0E7070071D3EC /* WCUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -572,6 +579,19 @@
 		11EAED6325F0790A0071D3EC /* UIView+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WF.m"; sourceTree = "<group>"; };
 		11EAED6425F0790A0071D3EC /* UIScreen+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+WF.m"; sourceTree = "<group>"; };
 		11EAED6525F0790A0071D3EC /* UIImage+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WF.m"; sourceTree = "<group>"; };
+		11EAED7725F07EE50071D3EC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		11EAED7825F07EE50071D3EC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		11EAED7D25F07EFC0071D3EC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		11EAED8225F07F3B0071D3EC /* OtherLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherLoginViewController.h; sourceTree = "<group>"; };
+		11EAED8325F07F3B0071D3EC /* OtherLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherLoginViewController.m; sourceTree = "<group>"; };
+		11EAED8B25F085B70071D3EC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		11EAED8C25F085B70071D3EC /* MBProgressHUD+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HM.h"; sourceTree = "<group>"; };
+		11EAED8D25F085B70071D3EC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		11EAED8E25F085B70071D3EC /* MBProgressHUD+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HM.m"; sourceTree = "<group>"; };
+		11EAED8F25F085B70071D3EC /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		11EAED9725F085EF0071D3EC /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		11EAEDA725F0E7070071D3EC /* WCUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCUserInfo.h; sourceTree = "<group>"; };
+		11EAEDA825F0E7070071D3EC /* WCUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCUserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -629,9 +649,6 @@
 				1176296125E79DE6000A6E4C /* Classes */,
 				111081E825E79A3400B105D3 /* AppDelegate.h */,
 				111081E925E79A3400B105D3 /* AppDelegate.m */,
-				1110822625E79B3C00B105D3 /* HomeViewController.h */,
-				1110822725E79B3C00B105D3 /* HomeViewController.m */,
-				111081F125E79A3400B105D3 /* Main.storyboard */,
 				111081F425E79A3500B105D3 /* Assets.xcassets */,
 				111081F625E79A3500B105D3 /* LaunchScreen.storyboard */,
 				111081F925E79A3500B105D3 /* Info.plist */,
@@ -662,6 +679,9 @@
 		1176296125E79DE6000A6E4C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				11EAED9625F085DF0071D3EC /* Others */,
+				11EAED7325F07EA10071D3EC /* Main */,
+				11EAED7225F07E850071D3EC /* Login */,
 				1176296225E79DF5000A6E4C /* Lib */,
 			);
 			path = Classes;
@@ -670,6 +690,7 @@
 		1176296225E79DF5000A6E4C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				11EAED8A25F085B70071D3EC /* MBProgessHUD */,
 				11EAED5825F079090071D3EC /* Category */,
 				1176296325E79DFE000A6E4C /* XMPP */,
 			);
@@ -1683,6 +1704,50 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		11EAED7225F07E850071D3EC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				11EAED7725F07EE50071D3EC /* LoginViewController.h */,
+				11EAED7825F07EE50071D3EC /* LoginViewController.m */,
+				11EAED7D25F07EFC0071D3EC /* Login.storyboard */,
+				11EAED8225F07F3B0071D3EC /* OtherLoginViewController.h */,
+				11EAED8325F07F3B0071D3EC /* OtherLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		11EAED7325F07EA10071D3EC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				111081F125E79A3400B105D3 /* Main.storyboard */,
+				1110822625E79B3C00B105D3 /* HomeViewController.h */,
+				1110822725E79B3C00B105D3 /* HomeViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11EAED8A25F085B70071D3EC /* MBProgessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				11EAED8B25F085B70071D3EC /* MBProgressHUD.m */,
+				11EAED8C25F085B70071D3EC /* MBProgressHUD+HM.h */,
+				11EAED8D25F085B70071D3EC /* MBProgressHUD.h */,
+				11EAED8E25F085B70071D3EC /* MBProgressHUD+HM.m */,
+				11EAED8F25F085B70071D3EC /* MBProgressHUD.bundle */,
+			);
+			path = MBProgessHUD;
+			sourceTree = "<group>";
+		};
+		11EAED9625F085DF0071D3EC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				11EAED9725F085EF0071D3EC /* Singleton.h */,
+				11EAEDA725F0E7070071D3EC /* WCUserInfo.h */,
+				11EAEDA825F0E7070071D3EC /* WCUserInfo.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1787,9 +1852,11 @@
 			files = (
 				111081F825E79A3500B105D3 /* LaunchScreen.storyboard in Resources */,
 				111081F525E79A3500B105D3 /* Assets.xcassets in Resources */,
+				11EAED7E25F07EFC0071D3EC /* Login.storyboard in Resources */,
 				111081F325E79A3400B105D3 /* Main.storyboard in Resources */,
 				11DEEB9025ECC6CA0056A0C6 /* Documentation.html in Resources */,
 				11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */,
+				11EAED9225F085B70071D3EC /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1826,6 +1893,7 @@
 				11DEED1025ECC8960056A0C6 /* XMPPvCardAvatarCoreDataStorageObject.m in Sources */,
 				11DEED5C25ECC8960056A0C6 /* XMPPTimer.m in Sources */,
 				11DEED2E25ECC8960056A0C6 /* XMPPMessageArchiving_Message_CoreDataObject.m in Sources */,
+				11EAEDA925F0E7070071D3EC /* WCUserInfo.m in Sources */,
 				11DEED2B25ECC8960056A0C6 /* NSXMLElement+XEP_0335.m in Sources */,
 				11DEED0B25ECC8960056A0C6 /* XMPPvCardTempModule.m in Sources */,
 				11DEEB2D25ECBEA30056A0C6 /* DDFileLogger.m in Sources */,
@@ -1847,6 +1915,7 @@
 				11DEED0425ECC8960056A0C6 /* NSXMLElement+XEP_0203.m in Sources */,
 				11DEECEE25ECC8960056A0C6 /* XMPPIQ+LastActivity.m in Sources */,
 				11DEED3E25ECC8960056A0C6 /* XMPPMessage+XEP_0334.m in Sources */,
+				11EAED8425F07F3B0071D3EC /* OtherLoginViewController.m in Sources */,
 				11DEED3A25ECC8960056A0C6 /* XMPPStreamManagementStanzas.m in Sources */,
 				11DEECF125ECC8960056A0C6 /* XMPPMessage+XEP_0085.m in Sources */,
 				11DEED4325ECC8960056A0C6 /* XMPPMessage+XEP_0184.m in Sources */,
@@ -1868,6 +1937,7 @@
 				11DEEB2625ECBEA30056A0C6 /* DDDispatchQueueLogFormatter.m in Sources */,
 				11DEED3225ECC8960056A0C6 /* XMPPCoreDataStorage.m in Sources */,
 				11DEEB6225ECC47C0056A0C6 /* DDXMLElementAdditions.m in Sources */,
+				11EAED9025F085B70071D3EC /* MBProgressHUD.m in Sources */,
 				11DEED2125ECC8960056A0C6 /* XMPPRoomOccupantMemoryStorageObject.m in Sources */,
 				11DEED5A25ECC8960056A0C6 /* XMPPStringPrep.m in Sources */,
 				11DEECFB25ECC8960056A0C6 /* XMPPRoster.xcdatamodel in Sources */,
@@ -1895,6 +1965,7 @@
 				11DEED1C25ECC8960056A0C6 /* XMPPMUC.m in Sources */,
 				11DEED0D25ECC8960056A0C6 /* XMPPvCardTempAdr.m in Sources */,
 				11DEED3D25ECC8960056A0C6 /* NSString+XEP_0106.m in Sources */,
+				11EAED9125F085B70071D3EC /* MBProgressHUD+HM.m in Sources */,
 				11DEED0925ECC8960056A0C6 /* XMPPvCardTempTel.m in Sources */,
 				11DEECF325ECC8960056A0C6 /* XMPPHTTPFileUpload.m in Sources */,
 				11DEED3025ECC8960056A0C6 /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
@@ -1918,6 +1989,7 @@
 				11DEED3825ECC8960056A0C6 /* XMPPStreamManagementMemoryStorage.m in Sources */,
 				11DEECE325ECC8960056A0C6 /* XMPPStream.m in Sources */,
 				11DEED0F25ECC8960056A0C6 /* XMPPvCardTempCoreDataStorageObject.m in Sources */,
+				11EAED7925F07EE50071D3EC /* LoginViewController.m in Sources */,
 				11DEED8625ECC93D0056A0C6 /* XMPPXOAuth2Google.m in Sources */,
 				11DEECE825ECC8960056A0C6 /* XMPPElement.m in Sources */,
 				11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */,
