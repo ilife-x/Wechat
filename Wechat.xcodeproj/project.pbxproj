@@ -14,10 +14,11 @@
 		111081FB25E79A3500B105D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 111081FA25E79A3500B105D3 /* main.m */; };
 		1110820525E79A3500B105D3 /* WechatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110820425E79A3500B105D3 /* WechatTests.m */; };
 		1110821025E79A3500B105D3 /* WechatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110820F25E79A3500B105D3 /* WechatUITests.m */; };
-		1110822825E79B3C00B105D3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110822725E79B3C00B105D3 /* HomeViewController.m */; };
 		114AA48D25EC915C000001E3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 114AA48925EC9145000001E3 /* libresolv.tbd */; };
 		11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 117629FF25E7ADD0000A6E4C /* build-libidn.sh */; };
 		11762A0325E7ADD0000A6E4C /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11762A0025E7ADD0000A6E4C /* libidn.a */; };
+		119A938625F1D918006C0E99 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938525F1D918006C0E99 /* HomeViewController.m */; };
+		119A938C25F1D9A9006C0E99 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938B25F1D9A9006C0E99 /* MineViewController.m */; };
 		11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */; };
 		11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */; };
 		11DEEB2325ECBEA30056A0C6 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1025ECBEA30056A0C6 /* DDASLLogger.m */; };
@@ -223,8 +224,6 @@
 		1110820B25E79A3500B105D3 /* WechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1110820F25E79A3500B105D3 /* WechatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatUITests.m; sourceTree = "<group>"; };
 		1110821125E79A3500B105D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1110822625E79B3C00B105D3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		1110822725E79B3C00B105D3 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		114AA48925EC9145000001E3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		117629FE25E7ADD0000A6E4C /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		117629FF25E7ADD0000A6E4C /* build-libidn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-libidn.sh"; sourceTree = "<group>"; };
@@ -233,6 +232,10 @@
 		11762C5225E7B752000A6E4C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		11762C5425E7B779000A6E4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1176996A25EDD231001EFD83 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		119A938425F1D918006C0E99 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		119A938525F1D918006C0E99 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		119A938A25F1D9A9006C0E99 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		119A938B25F1D9A9006C0E99 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		11DEEAFB25ECBEA30056A0C6 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOSLogger.m; sourceTree = "<group>"; };
@@ -1720,8 +1723,10 @@
 			isa = PBXGroup;
 			children = (
 				111081F125E79A3400B105D3 /* Main.storyboard */,
-				1110822625E79B3C00B105D3 /* HomeViewController.h */,
-				1110822725E79B3C00B105D3 /* HomeViewController.m */,
+				119A938425F1D918006C0E99 /* HomeViewController.h */,
+				119A938525F1D918006C0E99 /* HomeViewController.m */,
+				119A938A25F1D9A9006C0E99 /* MineViewController.h */,
+				119A938B25F1D9A9006C0E99 /* MineViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1974,6 +1979,7 @@
 				11DEED2325ECC8960056A0C6 /* XMPPRoomHybrid.xcdatamodeld in Sources */,
 				11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */,
 				11DEED5725ECC8960056A0C6 /* NSNumber+XMPP.m in Sources */,
+				119A938625F1D918006C0E99 /* HomeViewController.m in Sources */,
 				11DEED5D25ECC8960056A0C6 /* XMPPIDTracker.m in Sources */,
 				11DEED0525ECC8960056A0C6 /* XMPPJabberRPCModule.m in Sources */,
 				11DEED3925ECC8960056A0C6 /* XMPPStreamManagement.m in Sources */,
@@ -2000,6 +2006,7 @@
 				11DEEB2E25ECBEA30056A0C6 /* DDASLLogCapture.m in Sources */,
 				11DEED4925ECC8960056A0C6 /* XMPPURI.m in Sources */,
 				11DEED3525ECC8960056A0C6 /* XMPPIncomingFileTransfer.m in Sources */,
+				119A938C25F1D9A9006C0E99 /* MineViewController.m in Sources */,
 				11DEED4F25ECC8960056A0C6 /* XMPPIQ+XEP_0066.m in Sources */,
 				11DEECE125ECC8960056A0C6 /* XMPPMessage.m in Sources */,
 				11DEED1425ECC8960056A0C6 /* XMPPvCardTempEmail.m in Sources */,
@@ -2028,7 +2035,6 @@
 				11DEED0725ECC8960056A0C6 /* XMPPIQ+JabberRPCResonse.m in Sources */,
 				11DEED3725ECC8960056A0C6 /* XMPPOutgoingFileTransfer.m in Sources */,
 				11DEED1725ECC8960056A0C6 /* XMPPTime.m in Sources */,
-				1110822825E79B3C00B105D3 /* HomeViewController.m in Sources */,
 				11DEED4E25ECC8960056A0C6 /* XMPPMUCLight.m in Sources */,
 				11DEECFF25ECC8960056A0C6 /* XMPPMessage+XEP_0308.m in Sources */,
 				11DEED0C25ECC8960056A0C6 /* XMPPvCardTemp.m in Sources */,

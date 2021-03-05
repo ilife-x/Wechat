@@ -1,17 +1,19 @@
 //
-//  HomeViewController.m
+//  MineViewController.m
 //  Wechat
 //
 //  Created by xiao on 2021/3/5.
 //
 
-#import "HomeViewController.h"
+#import "MineViewController.h"
+#import "AppDelegate.h"
 
-@interface HomeViewController ()
+@interface MineViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *LogoutBtn;
 
 @end
 
-@implementation HomeViewController
+@implementation MineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +24,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
+#pragma mark - 注销
+- (IBAction)LogoutBtnClick:(id)sender {
+    AppDelegate *del = UIApplication.sharedApplication.delegate;
+    [del XMPPUserLogout];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

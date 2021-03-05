@@ -134,6 +134,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="登录" id="pef-ez-ZMY"/>
+                    <connections>
+                        <outlet property="userLabel" destination="cic-2t-IYf" id="zzA-o1-bzt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGN-AD-pFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
