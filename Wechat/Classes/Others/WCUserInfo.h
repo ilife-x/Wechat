@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString * pwd;//密码
 @property (nonatomic, assign) BOOL loginStatus;//登录状态,是否登录
 
+@property (nonatomic,copy)NSString *registerUser;//注册的用户名
+@property (nonatomic,copy)NSString *registerPwd;//注册的密码
+
+
 //单例
 singleton_interface(WCUserInfo);
 

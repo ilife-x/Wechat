@@ -6,11 +6,13 @@
 //
 
 #import "LoginViewController.h"
+#import "WCNavigationController.h"
+#import "WCRegisterViewController.h"
 #import "UIImage+WF.h"
 #import "UITextField+WF.h"
 #import "UIButton+WF.h"
 
-@interface LoginViewController ()
+@interface LoginViewController ()<regisgerViewControllerDidFinishRegister>;
 @property (weak, nonatomic) IBOutlet UILabel *userLabel;
 @property (weak, nonatomic) IBOutlet UITextField *pwdField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
@@ -39,10 +41,25 @@
     userInfo.user = self.userLabel.text;
     userInfo.pwd = self.pwdField.text;
 
-    
     [super login];
-    
-    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    id devc = segue.destinationViewController;
+    if ([devc isKindOfClass:[WCNavigationController class]]) {
+        WCNavigationController *nav = devc;
+        WCRegisterViewController *registerVc = (WCRegisterViewController *)nav.topViewController;
+        if ([registerVc isKindOfClass:[LoginViewController class]]) {
+            registerVc.delegate = self;
+
+        }
+        
+    }
+}
+
+- (void)regisgerViewControllerDidFinishRegister{
+    self.userLabel.text = [WCUserInfo sharedWCUserInfo].registerUser;
+    [MBProgressHUD showMessage:@"请重新输入密码登录" toView:self.view];
 }
 
 
