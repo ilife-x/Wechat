@@ -28,11 +28,11 @@
             </objects>
             <point key="canvasLocation" x="-411" y="537"/>
         </scene>
-        <!--Item-->
+        <!--微信-->
         <scene sceneID="Fdy-9m-sei">
             <objects>
-                <navigationController id="Ain-I7-Xft" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iZC-EA-BP3"/>
+                <navigationController id="Ain-I7-Xft" customClass="WCNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="微信" image="contacts_add_friend" id="iZC-EA-BP3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vOP-ft-App">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -170,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="2632" y="1041"/>
         </scene>
-        <!--mine-->
+        <!--我-->
         <scene sceneID="pzf-75-dJy">
             <objects>
-                <navigationController id="mP9-TV-6Kh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="mine" id="xsq-Mg-pxF"/>
+                <navigationController id="mP9-TV-6Kh" customClass="WCNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" id="xsq-Mg-pxF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="njx-NH-ct6">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -187,11 +187,11 @@
             </objects>
             <point key="canvasLocation" x="1717" y="1041"/>
         </scene>
-        <!--Item-->
+        <!--发现-->
         <scene sceneID="LEt-FV-1Ad">
             <objects>
-                <navigationController id="efg-xa-lEf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gY7-4A-dzI"/>
+                <navigationController id="efg-xa-lEf" customClass="WCNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" id="gY7-4A-dzI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W29-Ib-1Iz">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -204,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="1717" y="345"/>
         </scene>
-        <!--home-->
+        <!--通讯录-->
         <scene sceneID="Ln2-Fq-I0h">
             <objects>
-                <navigationController id="rS3-Fh-asW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="home" id="WEU-52-efs"/>
+                <navigationController id="rS3-Fh-asW" customClass="WCNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通讯录" id="WEU-52-efs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wqv-QE-fj9">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -223,6 +223,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="contacts_add_friend" width="28" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

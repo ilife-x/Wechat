@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "XMPPFramework.h"
+#import "WCNavigationController.h"
 
 @interface AppDelegate()<XMPPStreamDelegate>{
     XMPPStream * _xmppStream;
@@ -30,14 +31,21 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
-//    HomeViewController *home = [[HomeViewController alloc]init];
-//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:home];
-//    self.window.rootViewController = nav;
-//    [self.window makeKeyAndVisible];
     
-//    [self connectToHost];
+    [WCNavigationController setupNavTheme];
+    
+    //重新启动时获取用户信息
+    [[WCUserInfo sharedWCUserInfo] loadUserInfoFromSanbox];
+    
+    //  判断用户状态,如果是yes,就直接来到主页面
+    if ([WCUserInfo sharedWCUserInfo].loginStatus == YES) {
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:NSBundle.mainBundle];
+        self.window.rootViewController = storyBoard.instantiateInitialViewController;
+        [self XMPPUserLogin:nil];
+    }
+
     return YES;
 }
 
