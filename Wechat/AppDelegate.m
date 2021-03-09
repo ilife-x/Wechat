@@ -158,12 +158,14 @@
 
 #pragma mark - 注册成功 & 失败
 - (void)xmppStreamDidRegister:(XMPPStream *)sender{
+
     if (_resultBlock) {
         _resultBlock(XMPPResultTypeRegisterSuccess);
     }
 }
 
 - (void)xmppStream:(XMPPStream *)sender didNotRegister:(DDXMLElement *)error{
+
     if (_resultBlock) {
         _resultBlock(XMPPResultTypeRegisterFailure);
     }

@@ -27,6 +27,7 @@
     [MBProgressHUD showMessage:@"正在登录..." toView:self.view];
     //调用Appdelegate的登录方法
     AppDelegate *del = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    del.registerOperation = NO;
     __weak typeof (self) weakSelf = self;
     [del XMPPUserLogin:^(XMPPResultType resultType) {
         [weakSelf handleResultType:resultType];

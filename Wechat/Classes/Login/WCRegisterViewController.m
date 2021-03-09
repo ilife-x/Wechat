@@ -48,10 +48,12 @@
     }
     
     //保存用户注册信息
-    WCUserInfo.sharedWCUserInfo.user = self.userField.text;
-    WCUserInfo.sharedWCUserInfo.pwd = self.pwdField.text;
+    WCUserInfo *userInfo = WCUserInfo.sharedWCUserInfo;
+    userInfo.registerUser = self.userField.text;
+    userInfo.registerPwd = self.pwdField.text;
     
     AppDelegate *delegate = (AppDelegate *)UIApplication.sharedApplication.delegate;
+    delegate.registerOperation = YES;
     
     [MBProgressHUD showMessage:@"正在注册。。。" toView:self.view];
     __weak typeof(self) weakSelf = self;
@@ -67,10 +69,11 @@
 - (void)handleResultType:(XMPPResultType)type {
     //主线程刷新UI
     dispatch_async(dispatch_get_main_queue(), ^{
+
         switch (type) {
             case XMPPResultTypeRegisterSuccess:
                 WCLog(@"注册成功");
-                
+                [MBProgressHUD hideHUD];
                 //回到上个控制器，以便输入密码重新登录
                 [self dismissViewControllerAnimated:YES completion:nil];
                 if ([self.delegate respondsToSelector:@selector(regisgerViewControllerDidFinishRegister)]) {
@@ -80,7 +83,8 @@
                 break;
             case XMPPResultTypeRegisterFailure:
                 WCLog(@"注册失败");
-                [MBProgressHUD showError:@"账号或密码不正确" toView:self.view];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                [MBProgressHUD showError:@"注册失败,账号或用户名重复" toView:self.view];
                 break;
             case XMPPResultTypeNetErr:
                 WCLog(@"网络不稳定");
@@ -98,5 +102,15 @@
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)textChange:(id)sender {
+//    BOOL enable = (self.userField.text.length != 0 && self.pwdField.text.length != 0);
+//    self.registerBtn.enabled = enable;
+    
+    if (self.pwdField.text.length > 0 && ![self.pwdField.text  isEqual: @" "] && self.userField.text.length != 0 && ![self.userField.text isEqual:@""]) {
+        self.registerBtn.enabled = YES;
+    }else{
+        self.registerBtn.enabled = NO;
+    }
+}
 
 @end

@@ -1014,11 +1014,11 @@
 		11EAED8A25F085B70071D3EC /* MBProgessHUD */ = {
 			isa = PBXGroup;
 			children = (
+				11EAED8F25F085B70071D3EC /* MBProgressHUD.bundle */,
+				11EAED8D25F085B70071D3EC /* MBProgressHUD.h */,
 				11EAED8B25F085B70071D3EC /* MBProgressHUD.m */,
 				11EAED8C25F085B70071D3EC /* MBProgressHUD+HM.h */,
-				11EAED8D25F085B70071D3EC /* MBProgressHUD.h */,
 				11EAED8E25F085B70071D3EC /* MBProgressHUD+HM.m */,
-				11EAED8F25F085B70071D3EC /* MBProgressHUD.bundle */,
 			);
 			path = MBProgessHUD;
 			sourceTree = "<group>";

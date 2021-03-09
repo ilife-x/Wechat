@@ -49,17 +49,15 @@
     if ([devc isKindOfClass:[WCNavigationController class]]) {
         WCNavigationController *nav = devc;
         WCRegisterViewController *registerVc = (WCRegisterViewController *)nav.topViewController;
-        if ([registerVc isKindOfClass:[LoginViewController class]]) {
-            registerVc.delegate = self;
+        registerVc.delegate = self;
 
-        }
         
     }
 }
 
 - (void)regisgerViewControllerDidFinishRegister{
     self.userLabel.text = [WCUserInfo sharedWCUserInfo].registerUser;
-    [MBProgressHUD showMessage:@"请重新输入密码登录" toView:self.view];
+    [MBProgressHUD showSuccess:@"请重新输入密码登录" toView:self.view];
 }
 
 
