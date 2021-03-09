@@ -1,11 +1,15 @@
 //
-//  AppDelegate.h
+//  WCXMPPTool.h
 //  Wechat
 //
-//  Created by xiao on 2021/2/25.
+//  Created by xiao on 2021/3/9.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Singleton.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
 
 typedef enum{
     XMPPResultTypeLoginSuccess,//登录成功
@@ -18,9 +22,10 @@ typedef enum{
 typedef void(^XMPPResultBlock)(XMPPResultType resultType);//登录结果回调
 
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic, strong) UIWindow *window;
+
+@interface WCXMPPTool : NSObject
+singleton_interface(WCXMPPTool)
 
 //注册标识
 @property (nonatomic, assign,getter=isRegisterOperation) BOOL registerOperation;
@@ -35,4 +40,4 @@ typedef void(^XMPPResultBlock)(XMPPResultType resultType);//登录结果回调
 -(void)XMPPUserRegister:(XMPPResultBlock)resultBlock;
 @end
 
-
+NS_ASSUME_NONNULL_END

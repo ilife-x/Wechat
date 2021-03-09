@@ -52,12 +52,11 @@
     userInfo.registerUser = self.userField.text;
     userInfo.registerPwd = self.pwdField.text;
     
-    AppDelegate *delegate = (AppDelegate *)UIApplication.sharedApplication.delegate;
-    delegate.registerOperation = YES;
+    [WCXMPPTool sharedWCXMPPTool].registerOperation = YES;
     
     [MBProgressHUD showMessage:@"正在注册。。。" toView:self.view];
     __weak typeof(self) weakSelf = self;
-    [delegate XMPPUserRegister:^(XMPPResultType resultType) {
+    [[WCXMPPTool sharedWCXMPPTool] XMPPUserRegister:^(XMPPResultType resultType) {
             [weakSelf handleResultType:resultType];
         }];
     

@@ -26,8 +26,8 @@
 }
 #pragma mark - 注销
 - (IBAction)LogoutBtnClick:(id)sender {
-    AppDelegate *del = (AppDelegate *)UIApplication.sharedApplication.delegate;
-    [del XMPPUserLogout];
+//    AppDelegate *del = (AppDelegate *)UIApplication.sharedApplication.delegate;
+    [[WCXMPPTool sharedWCXMPPTool] XMPPUserLogout];
 }
 #pragma mark - Table view data source
 

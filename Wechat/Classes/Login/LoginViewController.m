@@ -49,7 +49,9 @@
     if ([devc isKindOfClass:[WCNavigationController class]]) {
         WCNavigationController *nav = devc;
         WCRegisterViewController *registerVc = (WCRegisterViewController *)nav.topViewController;
-        registerVc.delegate = self;
+        if ([registerVc isKindOfClass:[WCRegisterViewController class]]) {
+            registerVc.delegate = self;
+        }
 
         
     }

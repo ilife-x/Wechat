@@ -1,16 +1,17 @@
 //
-//  AppDelegate.m
+//  WCXMPPTool.m
 //  Wechat
 //
-//  Created by xiao on 2021/2/25.
+//  Created by xiao on 2021/3/9.
 //
 
-#import "AppDelegate.h"
+#import "WCXMPPTool.h"
 #import "HomeViewController.h"
 #import "XMPPFramework.h"
 #import "WCNavigationController.h"
+#import "UIStoryboard+WF.h"
 
-@interface AppDelegate()<XMPPStreamDelegate>{
+@interface WCXMPPTool()<XMPPStreamDelegate>{
     XMPPStream * _xmppStream;
     XMPPResultBlock _resultBlock;
 }
@@ -26,28 +27,12 @@
 - (void)sendPwdToHost;
 //4.授权成功后,发送"在线"消息
 - (void)sendOnlineToHost;
+
+
 @end
 
-@implementation AppDelegate
-
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    [WCNavigationController setupNavTheme];
-    
-    //重新启动时获取用户信息
-    [[WCUserInfo sharedWCUserInfo] loadUserInfoFromSanbox];
-    
-    //  判断用户状态,如果是yes,就直接来到主页面
-    if ([WCUserInfo sharedWCUserInfo].loginStatus == YES) {
-        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:NSBundle.mainBundle];
-        self.window.rootViewController = storyBoard.instantiateInitialViewController;
-        [self XMPPUserLogin:nil];
-    }
-
-    return YES;
-}
+@implementation WCXMPPTool
+singleton_implementation(WCXMPPTool);
 
 #pragma mark - 登录流程
 
@@ -192,8 +177,7 @@
     [_xmppStream disconnect];
 
     //3.切换到登录页面
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:NSBundle.mainBundle];
-    self.window.rootViewController = storyboard.instantiateInitialViewController;
+    [UIStoryboard showInitialVCWithName:@"Login"];
     
     //4.更改用户状态
     WCUserInfo.sharedWCUserInfo.loginStatus = NO;
@@ -209,4 +193,5 @@
     //链接到服务器
     [self connectToHost];
 }
+
 @end

@@ -14,6 +14,7 @@
 #import "WCUserInfo.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+HM.h"
+#import "WCXMPPTool.h"
 
 //自定义log
 #ifdef DEBUG
