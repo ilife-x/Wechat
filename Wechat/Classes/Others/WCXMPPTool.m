@@ -14,6 +14,11 @@
 @interface WCXMPPTool()<XMPPStreamDelegate>{
     XMPPStream * _xmppStream;
     XMPPResultBlock _resultBlock;
+    XMPPvCardCoreDataStorage *_vCardStorage;
+    XMPPvCardTempModule *_vCard;
+    XMPPvCardAvatarModule *_vCardAvatar;
+    XMPPReconnect *_reconnect;
+
 }
 
 /**
@@ -40,9 +45,41 @@ singleton_implementation(WCXMPPTool);
 - (void)setupXMPPStream{
     //初始化
     _xmppStream = [[XMPPStream alloc]init];
+    
+    //添加电子名片模块(头像和个人信息)
+    _vCardStorage = [XMPPvCardCoreDataStorage sharedInstance];
+    _vCard = [[XMPPvCardTempModule alloc]initWithvCardStorage:_vCardStorage];
+    [_vCard activate:_xmppStream];//激活
+    
+    //头像模块
+    _vCardAvatar = [[XMPPvCardAvatarModule alloc]initWithvCardTempModule:_vCard];
+    [_vCardAvatar activate:_xmppStream];
+    
+    //添加自动连接模块,接入后有自动重连的功能
+    _reconnect = [[XMPPReconnect alloc]init];
+    [_reconnect activate:_xmppStream];
+    
+    
+
 
     //添加代理
     [_xmppStream addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
+}
+
+- (void)teardownStream
+{
+    [_xmppStream removeDelegate:self];
+    
+    [_reconnect deactivate];
+    [_vCard deactivate];
+    [_vCardAvatar deactivate];
+    [_xmppStream disconnect];
+    
+    _xmppStream = nil;
+    _reconnect = nil;
+    _vCardStorage = nil;
+    _vCard = nil;
+    _vCardAvatar = nil;
 }
 
 
@@ -194,4 +231,7 @@ singleton_implementation(WCXMPPTool);
     [self connectToHost];
 }
 
+- (void)dealloc{
+    [self teardownStream];
+}
 @end

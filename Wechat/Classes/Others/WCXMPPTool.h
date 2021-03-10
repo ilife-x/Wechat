@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Singleton.h"
+#import "XMPPFramework.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,6 +30,8 @@ singleton_interface(WCXMPPTool)
 
 //注册标识
 @property (nonatomic, assign,getter=isRegisterOperation) BOOL registerOperation;
+//电子名片
+@property (nonatomic, strong) XMPPvCardTempModule *vCard;
 
 
 #pragma mark - methods
