@@ -85,6 +85,8 @@
 		11EAEDA925F0E7070071D3EC /* WCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEDA825F0E7070071D3EC /* WCUserInfo.m */; };
 		11FCB02625F7468700FD9753 /* WCXMPPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FCB02525F7468700FD9753 /* WCXMPPTool.m */; };
 		11FCB03125F7729300FD9753 /* UIStoryboard+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FCB02F25F7729300FD9753 /* UIStoryboard+WF.m */; };
+		11FCB04225F8CDA600FD9753 /* WCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FCB04125F8CDA600FD9753 /* WCProfileViewController.m */; };
+		11FCB04825F8CDC000FD9753 /* WCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FCB04725F8CDC000FD9753 /* WCEditProfileViewController.m */; };
 		308FFA5925F6535B00D1F72E /* WCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308FFA5825F6535B00D1F72E /* WCRegisterViewController.m */; };
 		30F8E90225F2874E00980CCC /* XMPPLastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F8E82025F2874E00980CCC /* XMPPLastActivity.m */; };
 		30F8E90325F2874E00980CCC /* XMPPIQ+LastActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F8E82125F2874E00980CCC /* XMPPIQ+LastActivity.m */; };
@@ -368,6 +370,10 @@
 		11FCB02525F7468700FD9753 /* WCXMPPTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCXMPPTool.m; sourceTree = "<group>"; };
 		11FCB02F25F7729300FD9753 /* UIStoryboard+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+WF.m"; path = "../../../../../Desktop/XMPP&SQL/1209-xmppday4/代码/01-WeChat【XMPPTool工具类抽取】/WeChat/Classes/Lib/Category/UIStoryboard+WF.m"; sourceTree = "<group>"; };
 		11FCB03025F7729300FD9753 /* UIStoryboard+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+WF.h"; path = "../../../../../Desktop/XMPP&SQL/1209-xmppday4/代码/01-WeChat【XMPPTool工具类抽取】/WeChat/Classes/Lib/Category/UIStoryboard+WF.h"; sourceTree = "<group>"; };
+		11FCB04025F8CDA600FD9753 /* WCProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCProfileViewController.h; sourceTree = "<group>"; };
+		11FCB04125F8CDA600FD9753 /* WCProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCProfileViewController.m; sourceTree = "<group>"; };
+		11FCB04625F8CDC000FD9753 /* WCEditProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCEditProfileViewController.h; sourceTree = "<group>"; };
+		11FCB04725F8CDC000FD9753 /* WCEditProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCEditProfileViewController.m; sourceTree = "<group>"; };
 		308FFA5725F6535B00D1F72E /* WCRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCRegisterViewController.h; sourceTree = "<group>"; };
 		308FFA5825F6535B00D1F72E /* WCRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCRegisterViewController.m; sourceTree = "<group>"; };
 		30F8E81E25F2874E00980CCC /* XMPPIQ+LastActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMPPIQ+LastActivity.h"; sourceTree = "<group>"; };
@@ -1011,6 +1017,10 @@
 			isa = PBXGroup;
 			children = (
 				111081F125E79A3400B105D3 /* Main.storyboard */,
+				11FCB04025F8CDA600FD9753 /* WCProfileViewController.h */,
+				11FCB04125F8CDA600FD9753 /* WCProfileViewController.m */,
+				11FCB04625F8CDC000FD9753 /* WCEditProfileViewController.h */,
+				11FCB04725F8CDC000FD9753 /* WCEditProfileViewController.m */,
 				119A938425F1D918006C0E99 /* HomeViewController.h */,
 				119A938525F1D918006C0E99 /* HomeViewController.m */,
 				119A938A25F1D9A9006C0E99 /* MineViewController.h */,
@@ -1791,6 +1801,7 @@
 				11DEED8025ECC93D0056A0C6 /* XMPPAnonymousAuthentication.m in Sources */,
 				30F8E94A25F2874E00980CCC /* XMPPPing.m in Sources */,
 				11DEEB9225ECC6CA0056A0C6 /* GCDAsyncSocket.m in Sources */,
+				11FCB04225F8CDA600FD9753 /* WCProfileViewController.m in Sources */,
 				30F8E95225F2874E00980CCC /* XMPPCapsCoreDataStorageObject.m in Sources */,
 				11DEECE525ECC8960056A0C6 /* XMPPIQ.m in Sources */,
 				30F8E92525F2874E00980CCC /* XMPPvCardTempEmail.m in Sources */,
@@ -1834,6 +1845,7 @@
 				11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */,
 				30F8E94225F2874E00980CCC /* XMPPMessageArchiving.m in Sources */,
 				11DEECE425ECC8960056A0C6 /* XMPPParser.m in Sources */,
+				11FCB04825F8CDC000FD9753 /* WCEditProfileViewController.m in Sources */,
 				30F8E94C25F2874E00980CCC /* XMPPMessageDeliveryReceipts.m in Sources */,
 				11EAED6B25F0790A0071D3EC /* UIImage+WF.m in Sources */,
 				11DEEB2E25ECBEA30056A0C6 /* DDASLLogCapture.m in Sources */,
