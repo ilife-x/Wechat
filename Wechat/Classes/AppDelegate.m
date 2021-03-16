@@ -9,6 +9,8 @@
 #import "HomeViewController.h"
 #import "XMPPFramework.h"
 #import "WCNavigationController.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
 
 @interface AppDelegate()
 
@@ -32,6 +34,14 @@
         self.window.rootViewController = storyBoard.instantiateInitialViewController;
         [[WCXMPPTool sharedWCXMPPTool] XMPPUserLogin:nil];
     }
+    
+    //沙盒路径
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    WCLog(@"沙盒路径:%@",path);
+    
+    //打开xmpp的日志
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+
 
     return YES;
 }

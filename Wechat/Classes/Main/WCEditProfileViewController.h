@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WCEditProfileViewController : UITableViewController
-
+@property (nonatomic, strong) UITableViewCell *cell;
 @end
 
 NS_ASSUME_NONNULL_END
