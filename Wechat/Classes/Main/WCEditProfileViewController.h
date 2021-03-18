@@ -9,8 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol WCEditProfileViewControllerDelegate <NSObject>
+
+- (void)editProfileViewControllerDidSave;
+
+@end
+
 @interface WCEditProfileViewController : UITableViewController
 @property (nonatomic, strong) UITableViewCell *cell;
+@property (nonatomic,weak)id <WCEditProfileViewControllerDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

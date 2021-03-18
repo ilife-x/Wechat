@@ -9,7 +9,7 @@
 #import "XMPPvCardTemp.h"
 #import "WCEditProfileViewController.h"
 
-@interface WCProfileViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface WCProfileViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,WCEditProfileViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *headerView;
 @property (weak, nonatomic) IBOutlet UILabel *nickNameLabel;
@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailNameLabel;
+@property (nonatomic, strong) UIActionSheet *sheet;
 
 
 @end
@@ -74,18 +75,6 @@
             UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"请选择" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"照相" otherButtonTitles:@"相册",nil];
             [sheet showInView:self.view];
             
-//            UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"请选择" message:@"选择头像" preferredStyle:UIAlertControllerStyleActionSheet];
-//            UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"照相" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//
-//            }];
-//            UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//
-//            }];
-//
-//            [alertVc addAction:action1];
-//            [alertVc addAction:action2];
-//            alertVc.modalPresentationStyle = UIModalPresentationNone;
-//            [self.navigationController.topViewController presentViewController:alertVc animated:YES completion:nil];
         }
             break;
         case 1:{
@@ -112,15 +101,18 @@
  */
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
+    imagePicker.allowsEditing = YES;
+    imagePicker.delegate = self;
+    self.modalPresentationStyle = UIModalPresentationFullScreen;
+    
     switch (buttonIndex) {
         case 0:
         {
             WCLog(@"照相");
             if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-                UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
                 imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-                imagePicker.allowsEditing = YES;
-                imagePicker.delegate = self;
                 [self presentViewController:imagePicker animated:YES completion:nil];
             }
 
@@ -131,9 +123,7 @@
         default:{
             WCLog(@"相册");
             if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-                UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
-                imagePicker.allowsEditing = YES;
-                imagePicker.delegate = self;
+                imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
                 [self presentViewController:imagePicker animated:YES completion:nil];
 
             }
@@ -144,11 +134,15 @@
 }
 
 
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info{
     WCLog(@"%@",info);
     UIImage *image = info[UIImagePickerControllerEditedImage];
     self.headerView.image = image;
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    //更新到服务器
+    [self editProfileViewControllerDidSave];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -156,8 +150,25 @@
     if ([desVc isKindOfClass:[WCEditProfileViewController class]]) {
         WCEditProfileViewController *editVc = desVc;
         editVc.cell = sender;
+        editVc.delegate = self;
     }
 }
 
+//保存信息到服务器
+- (void)editProfileViewControllerDidSave{
+    WCLog(@"editProfileViewControllerDidSave");
+    //重新赋值
+    XMPPvCardTemp *myvCard = [WCXMPPTool sharedWCXMPPTool].vCard.myvCardTemp;
+    myvCard.photo = UIImagePNGRepresentation(self.headerView.image);
+    myvCard.nickname = self.nickNameLabel.text;
+    myvCard.orgName = self.orgNameLabel.text;
+    if (self.orgUnitNameLabel.text.length > 0) {
+        myvCard.orgUnits = @[self.orgUnitNameLabel.text];
+    }
+    myvCard.title = self.titleNameLabel.text;
+    myvCard.mailer = self.emailNameLabel.text;
+    //上传服务器更新
+    [[WCXMPPTool sharedWCXMPPTool].vCard updateMyvCardTemp:myvCard];
+}
 
 @end
