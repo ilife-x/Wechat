@@ -32,6 +32,10 @@ singleton_interface(WCXMPPTool)
 @property (nonatomic, assign,getter=isRegisterOperation) BOOL registerOperation;
 //电子名片
 @property (nonatomic, strong) XMPPvCardTempModule *vCard;
+//花名册
+@property (nonatomic, strong) XMPPReconnect *reconnect;
+@property (nonatomic, strong) XMPPRoster *roster;
+@property (nonatomic, strong) XMPPRosterCoreDataStorage *rosterStorage;
 
 
 #pragma mark - methods

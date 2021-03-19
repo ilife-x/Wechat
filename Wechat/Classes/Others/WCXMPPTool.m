@@ -17,7 +17,7 @@
     XMPPvCardCoreDataStorage *_vCardStorage;
     XMPPvCardTempModule *_vCard;
     XMPPvCardAvatarModule *_vCardAvatar;
-    XMPPReconnect *_reconnect;
+
 
 }
 
@@ -59,6 +59,11 @@ singleton_implementation(WCXMPPTool);
     _reconnect = [[XMPPReconnect alloc]init];
     [_reconnect activate:_xmppStream];
     
+    //花名册
+    _rosterStorage = [[XMPPRosterCoreDataStorage alloc]init];
+    _roster = [[XMPPRoster alloc]initWithRosterStorage:_rosterStorage];
+    [_roster activate:_xmppStream];
+    
     
 
 
@@ -73,6 +78,7 @@ singleton_implementation(WCXMPPTool);
     [_reconnect deactivate];
     [_vCard deactivate];
     [_vCardAvatar deactivate];
+    [_roster deactivate];
     [_xmppStream disconnect];
     
     _xmppStream = nil;
@@ -80,6 +86,8 @@ singleton_implementation(WCXMPPTool);
     _vCardStorage = nil;
     _vCard = nil;
     _vCardAvatar = nil;
+    _roster = nil;
+    _rosterStorage = nil;
 }
 
 

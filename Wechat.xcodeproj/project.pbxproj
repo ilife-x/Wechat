@@ -17,6 +17,7 @@
 		114AA48D25EC915C000001E3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 114AA48925EC9145000001E3 /* libresolv.tbd */; };
 		116C89D125F5D24000935D04 /* WCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116C89D025F5D24000935D04 /* WCNavigationController.m */; };
 		116C89D925F628C100935D04 /* BaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116C89D825F628C100935D04 /* BaseLoginViewController.m */; };
+		116F65EA260443970099561C /* WCContatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116F65E9260443970099561C /* WCContatsViewController.m */; };
 		11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 117629FF25E7ADD0000A6E4C /* build-libidn.sh */; };
 		11762A0325E7ADD0000A6E4C /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11762A0025E7ADD0000A6E4C /* libidn.a */; };
 		119A938625F1D918006C0E99 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938525F1D918006C0E99 /* HomeViewController.m */; };
@@ -216,6 +217,8 @@
 		116C89D025F5D24000935D04 /* WCNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCNavigationController.m; sourceTree = "<group>"; };
 		116C89D725F628C100935D04 /* BaseLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLoginViewController.h; sourceTree = "<group>"; };
 		116C89D825F628C100935D04 /* BaseLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLoginViewController.m; sourceTree = "<group>"; };
+		116F65E8260443970099561C /* WCContatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCContatsViewController.h; sourceTree = "<group>"; };
+		116F65E9260443970099561C /* WCContatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCContatsViewController.m; sourceTree = "<group>"; };
 		117629FE25E7ADD0000A6E4C /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		117629FF25E7ADD0000A6E4C /* build-libidn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-libidn.sh"; sourceTree = "<group>"; };
 		11762A0025E7ADD0000A6E4C /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
@@ -1025,6 +1028,8 @@
 				119A938525F1D918006C0E99 /* HomeViewController.m */,
 				119A938A25F1D9A9006C0E99 /* MineViewController.h */,
 				119A938B25F1D9A9006C0E99 /* MineViewController.m */,
+				116F65E8260443970099561C /* WCContatsViewController.h */,
+				116F65E9260443970099561C /* WCContatsViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1168,15 +1173,15 @@
 		30F8E83925F2874E00980CCC /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
-				30F8E83A25F2874E00980CCC /* XMPPResourceCoreDataStorageObject.m */,
-				30F8E83B25F2874E00980CCC /* XMPPRosterCoreDataStorage.h */,
 				30F8E83C25F2874E00980CCC /* XMPPGroupCoreDataStorageObject.h */,
-				30F8E83D25F2874E00980CCC /* XMPPUserCoreDataStorageObject.m */,
-				30F8E83E25F2874E00980CCC /* XMPPRoster.xcdatamodel */,
-				30F8E83F25F2874E00980CCC /* XMPPRosterCoreDataStorage.m */,
-				30F8E84025F2874E00980CCC /* XMPPResourceCoreDataStorageObject.h */,
-				30F8E84125F2874E00980CCC /* XMPPUserCoreDataStorageObject.h */,
 				30F8E84225F2874E00980CCC /* XMPPGroupCoreDataStorageObject.m */,
+				30F8E84025F2874E00980CCC /* XMPPResourceCoreDataStorageObject.h */,
+				30F8E83A25F2874E00980CCC /* XMPPResourceCoreDataStorageObject.m */,
+				30F8E83E25F2874E00980CCC /* XMPPRoster.xcdatamodel */,
+				30F8E83B25F2874E00980CCC /* XMPPRosterCoreDataStorage.h */,
+				30F8E83F25F2874E00980CCC /* XMPPRosterCoreDataStorage.m */,
+				30F8E84125F2874E00980CCC /* XMPPUserCoreDataStorageObject.h */,
+				30F8E83D25F2874E00980CCC /* XMPPUserCoreDataStorageObject.m */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -1754,6 +1759,7 @@
 				30F8E93425F2874E00980CCC /* XMPPRoomHybrid.xcdatamodeld in Sources */,
 				30F8E94025F2874E00980CCC /* XMPPMessageArchiving.xcdatamodeld in Sources */,
 				30F8E92225F2874E00980CCC /* XMPPvCardCoreDataStorage.m in Sources */,
+				116F65EA260443970099561C /* WCContatsViewController.m in Sources */,
 				116C89D125F5D24000935D04 /* WCNavigationController.m in Sources */,
 				11EAED6825F0790A0071D3EC /* UITextField+WF.m in Sources */,
 				11EAED8425F07F3B0071D3EC /* OtherLoginViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #define UserKey @"user"
 #define LoginStatusKey @"LoginStatus"
 #define PwdKey @"pwd"
+static NSString *domain = @"bogon";
 
 @implementation WCUserInfo
 singleton_implementation(WCUserInfo)
@@ -30,5 +31,9 @@ singleton_implementation(WCUserInfo)
     [defaults synchronize];
     
     
+}
+
+- (NSString *)jid{
+    return [NSString stringWithFormat:@"%@@%@",self.user,domain];
 }
 @end
