@@ -44,10 +44,12 @@
                 break;
             case XMPPResultTypeLoginFailure:
                 WCLog(@"登录失败");
+                [MBProgressHUD hideHUDForView:self.view];
                 [MBProgressHUD showError:@"账号或密码不正确" toView:self.view];
                 break;
             case XMPPResultTypeNetErr:
                 WCLog(@"网络不给力");
+                [MBProgressHUD hideHUDForView:self.view];
                 [MBProgressHUD showError:@"网络不给力" toView:self.view];
 
                 break;
