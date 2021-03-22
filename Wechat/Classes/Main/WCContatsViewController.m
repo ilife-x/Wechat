@@ -7,7 +7,9 @@
 
 #import "WCContatsViewController.h"
 
-@interface WCContatsViewController ()
+@interface WCContatsViewController ()<NSFetchedResultsControllerDelegate>{
+    NSFetchedResultsController *_resultControl;
+}
 @property (nonatomic, copy) NSArray *friends;
 
 @end
@@ -31,14 +33,23 @@
     NSString *jid = [WCUserInfo sharedWCUserInfo].jid;
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"streamBareJidStr=%@",jid];
     request.predicate = pre;
-    
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"displayName" ascending:YES];
     request.sortDescriptors = @[sort];
+    
     //执行请求
     NSError *error = nil;
-    self.friends = [context executeFetchRequest:request error:&error];
-    NSLog(@"friends:%@",self.friends);
+//    self.friends = [context executeFetchRequest:request error:&error];
+//    NSLog(@"friends:%@",self.friends);
+    _resultControl = [[NSFetchedResultsController alloc]initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+    _resultControl.delegate = self;
+    [_resultControl performFetch:&error];
+    if (error) {
+        WCLog(@"%@",error);
+    }
 }
+
+
+
 
 #pragma mark - Table view data source
 
@@ -47,60 +58,59 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.friends.count;
+//    return self.friends.count;
+    return _resultControl.fetchedObjects.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"contactsCell" forIndexPath:indexPath];
-    XMPPUserCoreDataStorageObject *friend = self.friends[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",friend.jid];
+    XMPPUserCoreDataStorageObject *friend = _resultControl.fetchedObjects[indexPath.row];
+    
+    //好友jid(字符串形式)
+    cell.textLabel.text = friend.jidStr;
+    
+    //好友状态
+    switch (friend.sectionNum.intValue) {
+        case 0:
+            cell.detailTextLabel.text = @"在线";
+            break;
+        case 1:
+            cell.detailTextLabel.text = @"离开";
+            break;
+        case 2:
+            cell.detailTextLabel.text = @"离线";
+            break;
+            
+        default:
+            break;
+    }
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - NSFetchedResultsControllerDelegate
+//数据更新会调用
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
+    //刷新
+    [self.tableView reloadData];
 }
-*/
 
-/*
-// Override to support editing the table view.
+
+
+//支持tableView的编辑
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+        
+        WCLog(@"删除好友");
+        XMPPUserCoreDataStorageObject *obj =_resultControl.fetchedObjects[indexPath.row];
+        XMPPJID *friendJid = obj.jid;
+        [[WCXMPPTool sharedWCXMPPTool].roster removeUser:friendJid];
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    }
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end
