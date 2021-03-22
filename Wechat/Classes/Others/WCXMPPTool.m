@@ -12,7 +12,6 @@
 #import "UIStoryboard+WF.h"
 
 @interface WCXMPPTool()<XMPPStreamDelegate>{
-    XMPPStream * _xmppStream;
     XMPPResultBlock _resultBlock;
     XMPPvCardCoreDataStorage *_vCardStorage;
     XMPPvCardTempModule *_vCard;

@@ -10,7 +10,6 @@
 #define UserKey @"user"
 #define LoginStatusKey @"LoginStatus"
 #define PwdKey @"pwd"
-static NSString *domain = @"bogon";
 
 @implementation WCUserInfo
 singleton_implementation(WCUserInfo)

@@ -9,6 +9,7 @@
 #import "Singleton.h"
 
 NS_ASSUME_NONNULL_BEGIN
+static NSString *domain = @"bogon";
 
 @interface WCUserInfo : NSObject
 @property (nonatomic, copy) NSString * user;//用户名

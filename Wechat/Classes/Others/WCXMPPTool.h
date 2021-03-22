@@ -27,7 +27,7 @@ typedef void(^XMPPResultBlock)(XMPPResultType resultType);//登录结果回调
 
 @interface WCXMPPTool : NSObject
 singleton_interface(WCXMPPTool)
-
+@property (nonatomic, strong) XMPPStream * xmppStream;
 //注册标识
 @property (nonatomic, assign,getter=isRegisterOperation) BOOL registerOperation;
 //电子名片

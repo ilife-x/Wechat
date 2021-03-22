@@ -22,6 +22,7 @@
 		11762A0325E7ADD0000A6E4C /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11762A0025E7ADD0000A6E4C /* libidn.a */; };
 		119A938625F1D918006C0E99 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938525F1D918006C0E99 /* HomeViewController.m */; };
 		119A938C25F1D9A9006C0E99 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938B25F1D9A9006C0E99 /* MineViewController.m */; };
+		11A8E3FB26086CEA00DF082B /* WCAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */; };
 		11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */; };
 		11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */; };
 		11DEEB2325ECBEA30056A0C6 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1025ECBEA30056A0C6 /* DDASLLogger.m */; };
@@ -230,6 +231,8 @@
 		119A938525F1D918006C0E99 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		119A938A25F1D9A9006C0E99 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		119A938B25F1D9A9006C0E99 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		11A8E3F926086CEA00DF082B /* WCAddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAddContactViewController.h; sourceTree = "<group>"; };
+		11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAddContactViewController.m; sourceTree = "<group>"; };
 		11DEEAFB25ECBEA30056A0C6 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOSLogger.m; sourceTree = "<group>"; };
@@ -1030,6 +1033,8 @@
 				119A938B25F1D9A9006C0E99 /* MineViewController.m */,
 				116F65E8260443970099561C /* WCContatsViewController.h */,
 				116F65E9260443970099561C /* WCContatsViewController.m */,
+				11A8E3F926086CEA00DF082B /* WCAddContactViewController.h */,
+				11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1737,6 +1742,7 @@
 				11DEED6025ECC8960056A0C6 /* GCDMulticastDelegate.m in Sources */,
 				111081EA25E79A3400B105D3 /* AppDelegate.m in Sources */,
 				11DEEB2B25ECBEA30056A0C6 /* DDLoggerNames.m in Sources */,
+				11A8E3FB26086CEA00DF082B /* WCAddContactViewController.m in Sources */,
 				11DEEB2525ECBEA30056A0C6 /* DDContextFilterLogFormatter.m in Sources */,
 				30F8E94B25F2874E00980CCC /* XMPPAutoPing.m in Sources */,
 				11DEED5C25ECC8960056A0C6 /* XMPPTimer.m in Sources */,
