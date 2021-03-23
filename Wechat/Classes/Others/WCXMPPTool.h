@@ -36,7 +36,9 @@ singleton_interface(WCXMPPTool)
 @property (nonatomic, strong) XMPPReconnect *reconnect;
 @property (nonatomic, strong) XMPPRoster *roster;
 @property (nonatomic, strong) XMPPRosterCoreDataStorage *rosterStorage;
-
+//消息模块
+@property (nonatomic, strong) XMPPMessageArchiving *msgArchiving;
+@property (nonatomic, strong) XMPPMessageArchivingCoreDataStorage *msgStorage;
 
 #pragma mark - methods
 //登录

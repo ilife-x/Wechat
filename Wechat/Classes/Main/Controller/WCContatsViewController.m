@@ -7,7 +7,7 @@
 
 #import "WCContatsViewController.h"
 
-@interface WCContatsViewController ()<NSFetchedResultsControllerDelegate>{
+@interface WCContatsViewController ()<NSFetchedResultsControllerDelegate,UITableViewDelegate,UITableViewDataSource>{
     NSFetchedResultsController *_resultControl;
 }
 @property (nonatomic, copy) NSArray *friends;
@@ -109,6 +109,10 @@
     }
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"chatSegue" sender:nil];
+}
 
 
 

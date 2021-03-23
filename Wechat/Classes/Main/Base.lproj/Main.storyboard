@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -121,6 +122,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="LZg-Z3-af7" kind="show" identifier="chatSegue" id="O3v-O7-JbJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8b-GG-gE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,7 +177,23 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXB-eY-qGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3449" y="-309"/>
+            <point key="canvasLocation" x="3446" y="-626"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="cWD-1L-Y2f">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="LZg-Z3-af7" customClass="WCChatViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ckd-G3-FMm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lgj-Ra-YKV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GUQ-Gk-fgD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjP-dH-s8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3446" y="21"/>
         </scene>
         <!--发现-->
         <scene sceneID="rMJ-37-djl">

@@ -23,6 +23,9 @@
 		119A938625F1D918006C0E99 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938525F1D918006C0E99 /* HomeViewController.m */; };
 		119A938C25F1D9A9006C0E99 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119A938B25F1D9A9006C0E99 /* MineViewController.m */; };
 		11A8E3FB26086CEA00DF082B /* WCAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */; };
+		11A8E4032609CCC500DF082B /* WCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8E4022609CCC500DF082B /* WCChatViewController.m */; };
+		11A8E4112609D01A00DF082B /* WCInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8E4102609D01A00DF082B /* WCInputView.m */; };
+		11A8E4162609D03600DF082B /* WCInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A8E4152609D03600DF082B /* WCInputView.xib */; };
 		11DEEB2125ECBEA30056A0C6 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */; };
 		11DEEB2225ECBEA30056A0C6 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */; };
 		11DEEB2325ECBEA30056A0C6 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DEEB1025ECBEA30056A0C6 /* DDASLLogger.m */; };
@@ -233,6 +236,11 @@
 		119A938B25F1D9A9006C0E99 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		11A8E3F926086CEA00DF082B /* WCAddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAddContactViewController.h; sourceTree = "<group>"; };
 		11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAddContactViewController.m; sourceTree = "<group>"; };
+		11A8E4012609CCC500DF082B /* WCChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCChatViewController.h; sourceTree = "<group>"; };
+		11A8E4022609CCC500DF082B /* WCChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCChatViewController.m; sourceTree = "<group>"; };
+		11A8E40F2609D01A00DF082B /* WCInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCInputView.h; sourceTree = "<group>"; };
+		11A8E4102609D01A00DF082B /* WCInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCInputView.m; sourceTree = "<group>"; };
+		11A8E4152609D03600DF082B /* WCInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WCInputView.xib; sourceTree = "<group>"; };
 		11DEEAFB25ECBEA30056A0C6 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		11DEEAFC25ECBEA30056A0C6 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		11DEEAFD25ECBEA30056A0C6 /* DDOSLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOSLogger.m; sourceTree = "<group>"; };
@@ -725,6 +733,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		11A8E4072609CFD800DF082B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11FCB04025F8CDA600FD9753 /* WCProfileViewController.h */,
+				11FCB04125F8CDA600FD9753 /* WCProfileViewController.m */,
+				11FCB04625F8CDC000FD9753 /* WCEditProfileViewController.h */,
+				11FCB04725F8CDC000FD9753 /* WCEditProfileViewController.m */,
+				119A938425F1D918006C0E99 /* HomeViewController.h */,
+				119A938525F1D918006C0E99 /* HomeViewController.m */,
+				119A938A25F1D9A9006C0E99 /* MineViewController.h */,
+				119A938B25F1D9A9006C0E99 /* MineViewController.m */,
+				116F65E8260443970099561C /* WCContatsViewController.h */,
+				116F65E9260443970099561C /* WCContatsViewController.m */,
+				11A8E3F926086CEA00DF082B /* WCAddContactViewController.h */,
+				11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */,
+				11A8E4012609CCC500DF082B /* WCChatViewController.h */,
+				11A8E4022609CCC500DF082B /* WCChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11A8E4082609CFE400DF082B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A8E40F2609D01A00DF082B /* WCInputView.h */,
+				11A8E4102609D01A00DF082B /* WCInputView.m */,
+				11A8E4152609D03600DF082B /* WCInputView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		11DEEAFA25ECBEA30056A0C6 /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,19 +1061,9 @@
 		11EAED7325F07EA10071D3EC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				11A8E4082609CFE400DF082B /* View */,
+				11A8E4072609CFD800DF082B /* Controller */,
 				111081F125E79A3400B105D3 /* Main.storyboard */,
-				11FCB04025F8CDA600FD9753 /* WCProfileViewController.h */,
-				11FCB04125F8CDA600FD9753 /* WCProfileViewController.m */,
-				11FCB04625F8CDC000FD9753 /* WCEditProfileViewController.h */,
-				11FCB04725F8CDC000FD9753 /* WCEditProfileViewController.m */,
-				119A938425F1D918006C0E99 /* HomeViewController.h */,
-				119A938525F1D918006C0E99 /* HomeViewController.m */,
-				119A938A25F1D9A9006C0E99 /* MineViewController.h */,
-				119A938B25F1D9A9006C0E99 /* MineViewController.m */,
-				116F65E8260443970099561C /* WCContatsViewController.h */,
-				116F65E9260443970099561C /* WCContatsViewController.m */,
-				11A8E3F926086CEA00DF082B /* WCAddContactViewController.h */,
-				11A8E3FA26086CEA00DF082B /* WCAddContactViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1711,6 +1740,7 @@
 				11EAED7E25F07EFC0071D3EC /* Login.storyboard in Resources */,
 				111081F325E79A3400B105D3 /* Main.storyboard in Resources */,
 				11DEEB9025ECC6CA0056A0C6 /* Documentation.html in Resources */,
+				11A8E4162609D03600DF082B /* WCInputView.xib in Resources */,
 				11762A0225E7ADD0000A6E4C /* build-libidn.sh in Resources */,
 				11EAED9225F085B70071D3EC /* MBProgressHUD.bundle in Resources */,
 			);
@@ -1776,6 +1806,7 @@
 				11EAED6925F0790A0071D3EC /* UIView+WF.m in Sources */,
 				11DEEB6525ECC47C0056A0C6 /* NSString+DDXML.m in Sources */,
 				30F8E91B25F2874E00980CCC /* XMPPvCardTempBase.m in Sources */,
+				11A8E4112609D01A00DF082B /* WCInputView.m in Sources */,
 				30F8E93125F2874E00980CCC /* XMPPRoomMemoryStorage.m in Sources */,
 				30F8E92925F2874E00980CCC /* XMPPMessage+XEP_0224.m in Sources */,
 				30F8E92A25F2874E00980CCC /* XMPPAttentionModule.m in Sources */,
@@ -1891,6 +1922,7 @@
 				30F8E91C25F2874E00980CCC /* XMPPvCardTempModule.m in Sources */,
 				11DEECE225ECC8960056A0C6 /* XMPPPresence.m in Sources */,
 				30F8E93025F2874E00980CCC /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
+				11A8E4032609CCC500DF082B /* WCChatViewController.m in Sources */,
 				11DEED8525ECC93D0056A0C6 /* XMPPDeprecatedPlainAuthentication.m in Sources */,
 				30F8E91325F2874E00980CCC /* XMPPPresence+XEP_0172.m in Sources */,
 				11DEED7F25ECC93D0056A0C6 /* XMPPXFacebookPlatformAuthentication.m in Sources */,

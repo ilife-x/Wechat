@@ -63,7 +63,10 @@ singleton_implementation(WCXMPPTool);
     _roster = [[XMPPRoster alloc]initWithRosterStorage:_rosterStorage];
     [_roster activate:_xmppStream];
     
-    
+    //消息模块
+    _msgStorage = [[XMPPMessageArchivingCoreDataStorage alloc]init];
+    _msgArchiving = [[XMPPMessageArchiving alloc]initWithMessageArchivingStorage:_msgStorage];
+    [_msgArchiving activate:_xmppStream];
 
 
     //添加代理
@@ -78,7 +81,9 @@ singleton_implementation(WCXMPPTool);
     [_vCard deactivate];
     [_vCardAvatar deactivate];
     [_roster deactivate];
+    [_msgArchiving deactivate];
     [_xmppStream disconnect];
+    
     
     _xmppStream = nil;
     _reconnect = nil;
@@ -87,6 +92,8 @@ singleton_implementation(WCXMPPTool);
     _vCardAvatar = nil;
     _roster = nil;
     _rosterStorage = nil;
+    _msgArchiving = nil;
+    _msgStorage = nil;
 }
 
 
