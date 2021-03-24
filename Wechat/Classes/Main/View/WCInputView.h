@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WCInputView : UIView
 + (instancetype)inputView;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 

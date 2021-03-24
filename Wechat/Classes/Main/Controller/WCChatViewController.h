@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WCChatViewController : UIViewController
-
+@property (nonatomic, strong) XMPPJID *friendJid;
 @end
 
 NS_ASSUME_NONNULL_END

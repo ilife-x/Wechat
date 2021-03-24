@@ -6,6 +6,7 @@
 //
 
 #import "WCContatsViewController.h"
+#import "WCChatViewController.h"
 
 @interface WCContatsViewController ()<NSFetchedResultsControllerDelegate,UITableViewDelegate,UITableViewDataSource>{
     NSFetchedResultsController *_resultControl;
@@ -111,9 +112,18 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"chatSegue" sender:nil];
+    XMPPUserCoreDataStorageObject *friend =_resultControl.fetchedObjects[indexPath.row];
+    XMPPJID *jid = friend.jid;
+    [self performSegueWithIdentifier:@"chatSegue" sender:jid];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    id desVc = segue.destinationViewController;
+    if ([desVc isKindOfClass:[WCChatViewController class]]) {
+        WCChatViewController *chatVc = desVc;
+        chatVc.friendJid = sender;
+    }
+}
 
 
 
