@@ -93,8 +93,14 @@
 - (void)textViewDidChangeSelection:(UITextView *)textView{
     WCLog(@"%@",textView.text);
     if ([textView.text rangeOfString:@"\n"].length != 0) {
+        
+        NSString *msg = textView.text;
+        
+        //去除换行符
+        [msg stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         //发送聊天数据
-        [self sendMsg:textView.text];
+        [self sendMsg:msg];
+
         [self scrollToTablebottom];
         //清空输入框
         textView.text = nil;

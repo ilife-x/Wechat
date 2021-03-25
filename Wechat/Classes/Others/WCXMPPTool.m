@@ -118,7 +118,9 @@ singleton_implementation(WCXMPPTool);
     _xmppStream.myJID = myJID;
     
     //域名,也可以是ip地址
-    _xmppStream.hostName = @"10.20.34.13";
+//    _xmppStream.hostName = @"10.20.34.13";
+    _xmppStream.hostName = @"192.168.1.4";
+
     
     //默认端口就是5222,可以省略
     _xmppStream.hostPort = 5222;
